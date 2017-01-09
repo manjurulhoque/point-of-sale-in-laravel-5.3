@@ -12,7 +12,6 @@
 */
 Route::get('/', 'HomeController@index')->name('/');
 
-
 // Authentication routes
 Route::get('auth/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('auth/login', 'Auth\LoginController@login');

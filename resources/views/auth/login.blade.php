@@ -19,7 +19,7 @@
 					@endif
 
 					<form role="form" method="POST" action="{{ url('/auth/login') }}">
-
+						{{csrf_field()}}
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 					 
 					  <div class="input-field">

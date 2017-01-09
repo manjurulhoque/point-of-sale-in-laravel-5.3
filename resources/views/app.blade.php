@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="tutapos">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +47,7 @@
 
       <!-- Logo -->
       <a href="{{ route('/') }}" class="brand-logo">
-        <img src="" alt="Con">
+        <img src="images/pos.png" alt="POS">
       </a>
       <!-- /Logo -->
 
@@ -95,7 +95,7 @@
 
         <!-- Logo -->
         <a href="#!" class="brand-logo">
-          <img src="assets/_con/images/logo-white.png" alt="Con">
+          <img src="images/pos.png" alt="Pos">
         </a>
         <!-- /Logo -->
       </div>
