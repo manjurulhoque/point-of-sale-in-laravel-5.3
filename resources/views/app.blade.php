@@ -57,6 +57,10 @@
           @if (Auth::guest())
             <li><a href="{{ url('/auth/login') }}">Login</a></li>
           @else
+
+            <script type="text/javascript">
+              $(".yay-toggle").sideNav();
+            </script>
             <a class="dropdown-button" href="#!" data-activates="user-dropdown">
               <img src="images/customers/me.jpg" alt="John Doe" class="circle">{{ Auth::user()->name }}
               <i class="mdi-navigation-expand-more right"></i>
@@ -75,9 +79,11 @@
   </nav>
   <!-- /Top Navbar -->
 
+  @if(!Auth::guest())
+
   <aside class="yaybar yay-shrink yay-hide-to-small yay-gestures yay-light yay-static">
 
-    <div class="top">
+    <div class="top" id="toggleMenu">
       <div>
         <!-- Sidebar toggle -->
         <a href="#" class="yay-toggle">
@@ -94,7 +100,6 @@
         <!-- /Logo -->
       </div>
     </div>
-
 
     <div class="nano">
       <div class="nano-content">
@@ -147,6 +152,7 @@
     </div>
   </aside>
   <!-- /Yay Sidebar -->
+  @endif
 
 	@yield('content')
 
