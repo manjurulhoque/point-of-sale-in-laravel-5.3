@@ -1,4 +1,5 @@
-# point-of-sale-in-laravel-5.3(<h4>Not fully completed</h4>) and [Materializecss](http://materializecss.com/)
+# point-of-sale-in-laravel-5.3 and [Materializecss](http://materializecss.com/)
+<h4>Not fully completed</h4>
 Login Form
 [![Login form](screen1.PNG)](screen1.PNG)
 
